@@ -6,7 +6,6 @@ class TestMemory(unittest.TestCase):
     def setUp(self):
         self.memory = Memory()
 
-
     def test_put_adds_instruction_in_specified_address(self):
         self.memory.put(00000, "instruccion1")
         self.assertEqual("instruccion1", self.memory.get(00000), "Instruction not found in memory cell")    
